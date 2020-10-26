@@ -15,18 +15,20 @@
     <header>
         <div class="container clearfix">
             <nav>
-                <ul>
+                <ul class="navigationBar">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
             <h1 id="home">Animal Refuge</h1>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <ul class="socialMediaLinks">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
         </div>
     </header>
 
@@ -43,7 +45,7 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section id="gallery" class="gallery">
             <div class="container">
                 <h2>Some of our friends</h2>
                 <ul class="clearfix">
@@ -56,24 +58,65 @@
 
         <section class="spotlight">
             <div class="container">
-                <ul class="clearfix">
+                <ul class="secondaryLinks clearfix">
                     <li>
-                        <a href="#"><i class="fas fa-paw"></i></a>
-                        <h3>Animal spotlight</h3>
+                        <a href="#"><i class="fas fa-paw"></i></i>Animal spotlight</a>
                     </li>
                     <li>
-                        <a href="#"><i class="far fa-calendar-check"></i></a>
-                        <h3>Events</h3>
+                        <a href="#"><i class="far fa-calendar-check"></i>Events</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-shopping-bag"></i></a>
-                        <h3>Merch</h3>
+                        <a href="#"><i class="fas fa-shopping-bag"></i>Merch</a>
                     </li>
                 </ul>
             </div>
         </section>
 
+        <section id="blog" class="blog">
+            <div class="container clearfix">
+            <article class="blogPost">
+                <h3>Fascinating facts about zebras</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quos dolore impedit ab sit at maiores tempora, totam voluptate repellendus asperiores soluta est eaque nihil! Cum praesentium facilis mollitia incidunt laudantium voluptates debitis quam? Cumque?</p>
+                <button>Read more</button>
+            </article>
+            <figure><img src="./animal-land-assets/animal-land-assets/image-7.jpg" alt="this should be a picture of zebras"></figure>
+            <figure><img src="./animal-land-assets/animal-land-assets/image-2.jpg" alt="Kitten putting its paw up to a human's hand."></figure>
+            <article class="blogPost">
+                <h3>The bond between animals and humans</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit recusandae nesciunt maxime! Perferendis sunt nemo, eos reprehenderit dignissimos obcaecati temporibus placeat ducimus odit recusandae sed excepturi accusamus ad. Beatae exercitationem ad nemo ex provident?</p>
+                <button>Read more</button>
+            </article>
+            </div>
+        </section>
+
     </main>
 
+    <footer>
+        <div class="container clearfix">
+            <nav>
+                <ul class="footerNav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <form action="#" method="#" class="email" name="email">
+                <h4>Stay updated</h4>
+            
+                <label for="addEmail">Subscribe to our newsletter to stay updated</label>
+                <input type="email" id="addEmail" name="addEmail">
+            
+                <input type="submit" value="Subscribe" class="submit">
+            </form>
+            <div id="contact" class="contact">
+                <h4>Contact</h4>
+                <p>info@email.com | 123 - 456 - 7890</p>
+                <p>123 some road, Toronto, ON</p>
+                <p>A5A 5A5, Canada</p>
+            </div>
+        </div>
+    </footer>
+    <p class="copyright">Copyright © 2019 HackerYou</p>
 </body>
 </html>
